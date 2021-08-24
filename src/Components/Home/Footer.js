@@ -143,7 +143,7 @@ const Footer = () => {
             {/* <!-- Copyright --> */}
             <div className="text-center p-4" style={{ background: "rgba(0, 0, 0, 0.05)" }}>
                 © 2021 Copyright:
-                <a className="text-reset fw-bold" href="https://MDBootstrap.com/">MDBootstrap.com</a>
+                <a className="text-reset fw-bold" href="https://mahbub-hasan.netlify.app/">mahbub-hasan.netlify.app</a>
             </div>
             {/* <!-- Copyright --> */}
         </footer>
