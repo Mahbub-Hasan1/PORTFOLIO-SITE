@@ -1,0 +1,122 @@
+@import "../../utilities/variables";
+@import "../../utilities/mixins";
+
+.about_area {
+  background: $Alabaster;
+  padding: 40px 0px;
+
+  .about-compo_contents {
+    border-radius: 40px;
+    padding: 20px 30px;
+    position: relative;
+    top: -90px;
+    .about_hade {
+      h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $dark;
+      }
+      // hr {
+      //   height: 5px;
+      //   width: 40%;
+      //   background: $danger;
+      //   margin: 0 auto;
+      // }
+
+      div {
+        h2 {
+          span {
+            color: $info;
+          }
+          font-weight: 700;
+          color: $dark;
+          // text-transform: uppercase;
+          margin: 0px;
+        }
+        h5 {
+          font-weight: 700;
+          color: $primary;
+        }
+        p {
+          font-weight: 500;
+          font-size: 17px;
+          border-top: 2px solid $primary;
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      min-height: auto;
+    }
+  }
+  @media (max-width: 455px) {
+    padding: 0px 0px;
+    .about-compo_contents {
+      padding: 30px 20px;
+      top: -20px;
+      .about_hade {
+        div {
+          padding: 0px;
+          h2 {
+            font-size: 23px;
+          }
+          h5 {
+            font-size: 16px;
+          }
+          p {
+            // text-align: initial;
+          }
+        }
+      }
+    }
+  }
+  // ---------
+
+  .welcome_compo_cards {
+    div {
+      div {
+        .card {
+          border: 2px solid $primary;
+          transition: 0.5s;
+          .card-title {
+            font-weight: 700;
+            border-bottom: 2px solid $primary;
+            padding-bottom: 5px;
+            color: $primary;
+            .icon {
+              color: $warning;
+              border: 2px solid $warning;
+              border-radius: 50px;
+              padding: 3px;
+              font-size: 30px;
+            }
+          }
+          p {
+            font-weight: 500;
+          }
+        }
+        .card:hover {
+          cursor: pointer;
+          border: 2px solid $warning;
+          background: $light;
+          .card-title {
+            color: $warning;
+            border-bottom: 2px solid $warning;
+          }
+        }
+        .a_card {
+          border-radius: 30px 30px 0px 30px !important;
+        }
+        .b_card {
+          border-radius: 30px 30px 30px 0px !important;
+        }
+        .c_card {
+          border-radius: 30px 0px 30px 30px !important;
+        }
+        .d_card {
+          border-radius: 0px 30px 30px 30px !important;
+        }
+      }
+    }
+  }
+}

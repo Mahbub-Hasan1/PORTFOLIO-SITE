@@ -1,0 +1,67 @@
+@import "../../utilities/variables";
+@import "../../utilities/mixins";
+
+$serviceCard_bg: rgba(255, 255, 255, 0.945);
+.services_c_area {
+  padding: 10px 0px;
+
+  .services_c_area_title {
+    text-align: center;
+    h1 {
+      font-weight: bold;
+      font-size: 25px;
+      text-transform: uppercase;
+      color: $grey;
+    }
+    h2 {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $primary;
+    }
+    hr {
+      height: 5px;
+      background: $primary;
+      width: 15%;
+      margin: 0 auto;
+      border-radius: 50px;
+    }
+  }
+  .services_c_content {
+    min-height: 550px;
+    @extend .align_enter;
+
+    div {
+      div {
+        .card {
+          background-image: url("https://images.pexels.com/photos/1086178/pexels-photo-1086178.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+          .card-header {
+            margin: 10px 10px 0px 10px;
+            background: $serviceCard_bg;
+            text-align: center;
+            img {
+              width: 60%;
+            }
+          }
+          .card-body {
+            margin: 0px 10px 10px 10px;
+            background: $serviceCard_bg;
+            text-align: center;
+
+            .card-title {
+              font-weight: 700;
+              color: $dark;
+              // text-transform: uppercase;
+            }
+            .card-text {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      min-height: auto;
+    }
+  }
+}

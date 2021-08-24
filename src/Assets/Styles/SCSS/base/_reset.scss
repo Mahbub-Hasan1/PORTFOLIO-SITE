@@ -1,0 +1,71 @@
+/* browser rest code */
+@import "../utilities/variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  background: $Alabaster;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  html::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+a {
+  color: $link-Color;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  border: 2px solid $primary !important;
+}
+
+// == .card-columns responsive ===================================
+@media (min-width: 34em) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (min-width: 48em) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (min-width: 62em) {
+  .card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+
+// @media (min-width: 75em) {
+//   .card-columns {
+//     -webkit-column-count: 5;
+//     -moz-column-count: 5;
+//     column-count: 5;
+//   }
+// }
+
+// == .card-columns responsive ===================================
