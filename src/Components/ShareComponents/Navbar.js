@@ -25,7 +25,7 @@ const Navbar = () => {
                         {/* <!-- Navbar brand --> */}
                         <a className="navbar-brand mt-2 mt-lg-0" href="#">
                             <img
-                                src="https://mahbub-hasan.netlify.app/img/logo/mdb-transaprent-noshadows.png"
+                                src="https://MDBootstrap.com/img/logo/mdb-transaprent-noshadows.png"
                                 height="15"
                                 alt=""
                                 loading="lazy"
@@ -105,7 +105,7 @@ const Navbar = () => {
                             aria-expanded="false"
                         >
                             <img
-                                src="https://mahbub-hasan.netlify.app/img/new/avatars/2.jpg"
+                                src="https://MDBootstrap.com/img/new/avatars/2.jpg"
                                 className="rounded-circle"
                                 height="25"
                                 alt=""
